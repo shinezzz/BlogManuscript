@@ -98,7 +98,14 @@
 遇到问题先去issue搜一下。
 
 1. assert get_version(fvcore, 3) >= (0, 1, 1), "Requires fvcore>=0.1.1"
-    > 卸载fvcore，安装fvcore>=0.1.1
+    卸载fvcore，安装fvcore>=0.1.1
 2. 编译好的包和依赖是对应的
-    > 之前是依赖torch==1.4+cu100 torchvision==0.5+cu100
-    > 更新之后torch==1.5 torchvision==0.6
+    之前是依赖torch==1.4+cu100 torchvision==0.5+cu100
+    更新之后torch==1.5 torchvision==0.6
+
+    ```bash
+    # PyTorch官网推荐安装
+    pip install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+    # Detectron2推荐安装
+    pip install -U torch==1.5 torchvision==0.6 -f https://download.pytorch.org/whl/cu101/torch_stable.html
+    ```

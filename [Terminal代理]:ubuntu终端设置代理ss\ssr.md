@@ -52,7 +52,7 @@ export http_proxy=http://127.0.0.1:12333
 export https_proxy=http://127.0.0.1:12333
 ```
 
-[ ]用socks5理论上也可以，但是我一直出问题。
+- [ ] 用socks5理论上也可以，但是我一直出问题。
 
 ## ss/ssr加速git
 
